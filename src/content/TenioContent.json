@@ -1,0 +1,11 @@
+{
+    "icon": "tenio.svg",
+    "title": "iO ",
+    "text": "TEN-IO is a digital solutions company offering web design, software development, and custom technology services. They specialize in creating innovative and functional digital products to help businesses improve their online presence and operational efficiency.",
+    "button": [
+      {
+        "title": "Learn More",
+        "color": "#CCA351"
+      }
+    ]
+  }

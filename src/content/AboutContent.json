@@ -1,0 +1,16 @@
+{
+  "title": "What We do",
+  "text": "The job of the human resource department is always tedious and time consuming especially when it comes to planning and managing cooperate events that will motivate and bring the staff alive after a period of hard work.",
+  "section": [
+    {
+      "title": "Our Vision",
+      "content": "Our vision is to be the number one.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Our Mission",
+      "content": "Our mission is to provide premium.",
+      "icon": "notes2.svg"
+    }
+  ]
+}
