@@ -9,6 +9,7 @@ import {
   Title,
   NavLink,
   Extra,
+  SocialLinkContainer,
   LogoContainer,
   Para,
   Large,
@@ -40,7 +41,7 @@ const Footer = ({ t }: { t: TFunction }) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width="35px" height="35px" />
       </a>
     );
   };
@@ -51,43 +52,86 @@ const Footer = ({ t }: { t: TFunction }) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+            <br/>y
+            <NavLink to="/">
+              <LogoContainer>
+                <SvgIcon
+                  src="logo.svg"
+                  aria-label="homepage"
+                  width="60px"
+                  height="64px"
+                />
+              </LogoContainer>
+            </NavLink>
+            <br/>
               <Para>
-                {t(`QBE Ghana Limited is a registered all – round Events (planning and management) and Multimedia company..`)}
+                {t(`QBE Ghana Limited - Premium Quality & Elegance`)}
               </Para>
-              <a href="mailto:l.sammcaddy@gmail.com">
+              {/*<a href="mailto:l.sammcaddy@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              </a>*/}
+              
+              <Empty />
+              <SocialLinkContainer>
+                <SocialLink href="/" src="linkedin.svg" />
+                <SocialLink href="/" src="instagram.svg" />
+                <SocialLink href="/" src="facebook.svg" />
+                <SocialLink href="/" src="twitter.svg" />
+              </SocialLinkContainer>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/">{t("Application Security")}</Large>
-              <Large to="/">{t("Software Principles")}</Large>
+              <Title>{t("Links")}</Title>
+              <SvgIcon
+                    src="underline.svg"
+                    aria-label="homepage"
+                    width="40px"
+                    height="30px"
+                  />
+              <Large to="/">{t("About")}</Large>
+              <Large to="/">{t("Contact")}</Large>
+              <Large to="/">{t("Our Brands")}</Large>
+              <Large to="/">{t("Our Promise")}</Large>
+              <Large to="/">{t("Privacy")}</Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large to="/">{t("Subscribe")}</Large>
-              <Para>
-                {t(`Stay updated with our latest news, insights, and upcoming events.`)}
-              </Para>
-              <Large to="/">{t("Customer Support")}</Large>
+              <Title>{t("Our Brands")}</Title>
+              <SvgIcon
+                    src="underline.svg"
+                    aria-label="homepage"
+                    width="50px"
+                    height="30px"
+                  />
+              <Large to="/"><SvgIcon
+                    src="ourbrandsIcon.svg"
+                    aria-label="homepage"
+                    width="50px"
+                    height="30px"
+                  /> {t("Ten-io")}</Large>
+              <Large to="/"><SvgIcon
+                    src="ourbrandsIcon.svg"
+                    aria-label="homepage"
+                    width="50px"
+                    height="30px"
+                  />{t("QBE Events")}</Large>
+              <Large to="/"><SvgIcon
+                    src="ourbrandsIcon.svg"
+                    aria-label="homepage"
+                    width="50px"
+                    height="30px"
+                  />{t("Digital Design Studio")}</Large>
+              <Large to="/"><SvgIcon
+                    src="ourbrandsIcon.svg"
+                    aria-label="homepage"
+                    width="50px"
+                    height="30px"
+                  />{t("Keen Vision Labs")}</Large>
             </Col>
           </Row>
-          <Row justify="space-between">
+          {/*<Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
-              <Language>{t("Address")}</Language>
-              <Para>QBE Limited</Para>
-              <Para>Accra, Ghana</Para>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large to="/">{t("About")}</Large>
-              <Large to="/">{t("Blog")}</Large>
-              <Large to="/">{t("Press")}</Large>
-              <Large to="/">{t("Careers & Culture")}</Large>
-            </Col>
+            
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
@@ -109,59 +153,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 </LanguageSwitch>
               </LanguageSwitchContainer>
             </Col>
-          </Row>
+          </Row>*/}
         </Container>
       </FooterSection>
-      <Extra>
-        <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
-              </LogoContainer>
-            </NavLink>
-            <FooterContainer>
-              <SocialLink
-                href="https://github.com/addygeneral"
-                src="github.svg"
-              />
-              <SocialLink
-                href="/"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="/"
-                src="medium.svg"
-              />
-              {/*<a
-                href="https://ko-fi.com/Y8Y7H8BNJ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  height="36"
-                  style={{ border: 0, height: 36 }}
-                  src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
-                  alt="Buy Me a Coffee at ko-fi.com"
-                />
-              </a>*/}
-            </FooterContainer>
-          </Row>
-        </Container>
-      </Extra>
+      
     </>
   );
 };

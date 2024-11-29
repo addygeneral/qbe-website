@@ -1,6 +1,42 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+
+export const SocialLinkContainer = styled.div`
+  display: flex;
+  justify-content: left; /* Centers the icons on the row */
+  align-items: center;
+  gap: 15px; /* Adds spacing between the icons */
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 40px; /* Larger size for better visibility */
+      height: 40px;
+      transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1); /* Slight zoom effect */
+        fill: rgb(255, 130, 0); /* Optional hover fill color */
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    gap: 10px; /* Reduce spacing on smaller screens */
+
+    a svg {
+      width: 30px; /* Smaller size for responsiveness */
+      height: 30px;
+    }
+  }
+`;
+
 export const FooterSection = styled("footer")`
   background: rgb(0, 0, 0);
   padding: 2.5rem 0;
@@ -10,6 +46,7 @@ export const Title = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
   color: #ffff;
+  margin-bottom: 0;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -51,20 +88,24 @@ export const Para = styled("div")`
 
 export const Large = styled(Link)`
   font-size: 16px;
-  color: #ffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #CCA351;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-transform: capitalize;
   line-height: 24px;
-  display: block;
-  margin-bottom: 0.625rem;
+  display: flex;          
+  align-items: center;  
+  margin-bottom: 0.625rem; 
+  gap: 10px;  
   transition: all 0.3s ease-in-out;
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: rgb(255, 130, 0);
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: rgb(255, 130, 0) wavy underline;
   }
 `;
 
@@ -77,8 +118,8 @@ export const Chat = styled("p")`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 1px solid rgb(255, 130, 92);
-    color: rgb(255, 130, 92);
+    border-bottom: 1px solid rgb(255, 130, 0);
+    color: rgb(255, 130, 0);
   }
 `;
 
@@ -121,7 +162,7 @@ export const FooterContainer = styled("div")`
     height: 25px;
 
     &:hover {
-      fill: rgb(255, 130, 92);
+      fill: rgb(255, 130, 0);
     }
   }
 `;
