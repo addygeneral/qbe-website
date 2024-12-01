@@ -19,7 +19,7 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 export const IntroContainer = styled.div`
-  background-color: #000; /* Black background */
+  background-color: #000;
   width: 100%;
   margin: 0 ;
   padding: 0;
@@ -34,10 +34,7 @@ export const IntroContainer = styled.div`
     color: #fff!important;
     margin-left: 90px;
     margin-bottom: 40px;
-
-  }
-    button {
-    margin-left: 90px!important; 
+  
   }
   `
   
@@ -59,7 +56,7 @@ const Home = () => {
           direction="left"
           title={ProductContent.title}
           content={ProductContent.text}
-          button={ProductContent.button}
+          section={ProductContent.section}
           icon="waving.svg"
           id="product" />
         <ContentBlock
@@ -94,12 +91,15 @@ const Home = () => {
           content={Keenvisioncontent.text}
           icon="keenvision.svg"
           id="mission" />
-        <ContentBlock
-          direction="center"
-          title=""
-          content=""
-          icon="Rectangle102.jpg"
-          id="image-block" />
+        <IntroContainer>
+            <ContentBlock
+              direction="center"
+              title=""
+              content=""
+              icon="rectangle.svg"
+              id="image-block" />
+        </IntroContainer>
+       
         {/*
     <div className="content-block image-container">
       <img src={RectangleImage} alt="Rectangle" />
@@ -117,12 +117,14 @@ const Home = () => {
           content={UnlockContent.text}
           icon="unlock.svg"
           id="mission" />
-
-        <Contact
+      </Container>
+      <IntroContainer>
+      <Contact
           title={ContactContent.title}
           content={ContactContent.text}
           id="contact" />
-      </Container></>
+    </IntroContainer>
+      </>
   );
 };
 

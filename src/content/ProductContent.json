@@ -1,10 +1,27 @@
 {
-  "title": "About Us ",
-  "text": "QBE Ghana limited is a limited liability company that has an objective of providing its customers and business associates with services and products of premium quality and elegance with much emphasis on safety. QBE Ghana Limited is a registered all – round events (planning and management) and multimedia company that has its head office in Accra - Ghana.",
-  "button": [
+  "title": "About Us",
+  "text": "QBE Ghana Limited, established in 2017, is a reputable holdings company offering premium services across multiple sectors. We focus on delivering top-tier services with an emphasis on quality, safety, and customer satisfaction.",
+
+  "section": [
     {
-      "title": "Learn More",
-      "color": "#CCA351"
+      "title": "Quality",
+      "content": "Commitment to delivering the highest standards.",
+      "icon": "quality.svg"
+    },
+    {
+      "title": "Innovation",
+      "content": "Continuously improving to serve clients better.",
+      "icon": "innovation.svg"
+    },
+    {
+      "title": "Integrity",
+      "content": "Conducting business with honesty and respect.",
+      "icon": "integrity.svg"
+    },
+    {
+      "title": "Customer-Centricity",
+      "content": "Prioritizing clients’ needs.",
+      "icon": "customer.svg"
     }
   ]
 }

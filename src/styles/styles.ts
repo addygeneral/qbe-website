@@ -41,6 +41,7 @@ export const Styles = createGlobalStyle`
     textarea {
         border-radius: 4px;
         border: 0;
+        box-sizing: border-box;
         background: rgb(241, 242, 243);
         transition: all 0.3s ease-in-out;  
         outline: none;

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const StyledButton = styled("button")<{ color?: string }>`
   background: ${(p) => p.color || "#CCA351"};
-  color: ${(p) => (p.color ? "#2E186A" : "#fff")};
+  color: ${(p) => (p.color ? "#2E186A" : "#00000")};
   font-size: 1rem;
   font-weight: 700;
   width: 100%;
-  border: 1px solid #edf3f5;
+  border: 1px solid #CCA351;
   border-radius: 40px;
   padding: 13px 0;
   cursor: pointer;
@@ -14,6 +14,7 @@ export const StyledButton = styled("button")<{ color?: string }>`
   max-width: 180px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 16px 30px rgb(23 31 114 / 20%);
+  
 
   &:hover,
   &:active,

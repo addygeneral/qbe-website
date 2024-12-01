@@ -83,29 +83,20 @@ const ContentBlock = ({
           )}
           {direction === "left" && section && (
             <ServiceWrapper>
-              <Row justify="space-between">
-                {typeof section === "object" &&
-                  section.map(
-                    (
-                      item: {
-                        title: string;
-                        content: string;
-                        icon: string;
-                      },
-                      id: number
-                    ) => (
-                      <Col key={id} span={11}>
-                        <SvgIcon
-                          src={item.icon}
-                          width="60px"
-                          height="60px"
-                        />
-                        <MinTitle>{t(item.title)}</MinTitle>
-                        <MinPara>{t(item.content)}</MinPara>
-                      </Col>
-                    )
-                  )}
-              </Row>
+              {typeof section === "object" &&
+      section.map((item, id) => (
+        <Row justify="center" key={id} style={{ marginBottom: '20px' }}>
+          <Col span={24}>
+            <SvgIcon
+              src={item.icon}
+              width="60px"
+              height="60px"
+            />
+            <MinTitle>{t(item.title)}</MinTitle>
+            <MinPara>{t(item.content)}</MinPara>
+          </Col>
+        </Row>
+      ))}
             </ServiceWrapper>
           )}
         </ContentWrapper>
