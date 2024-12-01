@@ -55,32 +55,7 @@ const ContentBlock = ({
         <ContentWrapper>
           <h6>{t(title)}</h6>
           <Content>{t(content)}</Content>
-          {button && (
-            <ButtonWrapper>
-              {typeof button === "object" ? (
-                button.map(
-                  (
-                    item: {
-                      color?: string;
-                      title: string;
-                      actionId?: string;
-                    },
-                    id: number
-                  ) => (
-                    <Button
-                      key={id}
-                      color={item.color}
-                      onClick={() => scrollTo(item.actionId || "about")}
-                    >
-                      {t(item.title)}
-                    </Button>
-                  )
-                )
-              ) : (
-                <Button onClick={() => scrollTo("about")}>{t(button)}</Button>
-              )}
-            </ButtonWrapper>
-          )}
+          
           {direction === "left" && section && (
             <ServiceWrapper>
               {typeof section === "object" &&
