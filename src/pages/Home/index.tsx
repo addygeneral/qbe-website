@@ -2,9 +2,9 @@ import { lazy } from "react";
 import styled from "styled-components";
 import IntroContent from "../../content/IntroContent.json";
 //import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
+import WhatweContent from "../../content/WhatweContent.json";
 import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+import AboutContent from "../../content/AboutContent.json";
 import TenioContent from "../../content/TenioContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import DigitalContent from "../../content/DigitalContent.json";
@@ -54,16 +54,17 @@ const Home = () => {
         <ScrollToTop />
         <ContentBlock
           direction="left"
-          title={ProductContent.title}
-          content={ProductContent.text}
-          section={ProductContent.section}
+          title={AboutContent.title}
+          content={AboutContent.text}
+          section={AboutContent.section}
+          header="Core Values"
           icon="waving.svg"
           id="product" />
         <ContentBlock
           direction="left"
-          title={AboutContent.title}
-          content={AboutContent.text}
-          section={AboutContent.section}
+          title={WhatweContent.title}
+          content={WhatweContent.text}
+          section={WhatweContent.section}
           icon="graphs.svg"
           id="about" />
         <ContentBlock

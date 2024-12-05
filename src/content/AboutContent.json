@@ -1,16 +1,30 @@
 {
-  "title": "What We Promise",
-  "text": "At QBE Ghana Limited, we promise to deliver exceptional service that not only meets but exceeds your expectations. With a relentless commitment to quality, innovation, and integrity, we empower businesses and communities to thrive, ensuring every project we undertake reflects our unwavering dedication to excellence and your success.",
+  "title": "About Us",
+  "text": "QBE Ghana Limited, established in 2017, is a reputable holdings company offering premium services across multiple sectors. We focus on delivering top-tier services with an emphasis on quality, safety, and customer satisfaction.",
+
+
+  "header": "Core Values",
+  
   "section": [
     {
-      "title": "Our Vision",
-      "content": "Our vision is to be the number one.",
-      "icon": "notes.svg"
+      "title": "Quality",
+      "content": "Commitment to delivering the highest standards.",
+      "icon": "quality.svg"
     },
     {
-      "title": "Our Mission",
-      "content": "Our mission is to provide premium.",
-      "icon": "notes2.svg"
+      "title": "Innovation",
+      "content": "Continuously improving to serve clients better.",
+      "icon": "innovation.svg"
+    },
+    {
+      "title": "Integrity",
+      "content": "Conducting business with honesty and respect.",
+      "icon": "integrity.svg"
+    },
+    {
+      "title": "Customer-Centricity",
+      "content": "Prioritizing clients’ needs.",
+      "icon": "customer.svg"
     }
   ]
 }
