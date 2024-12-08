@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 export const SocialLinkContainer = styled.div`
   display: flex;
-  justify-content: left; /* Centers the icons on the row */
+  justify-content: left; 
   align-items: center;
-  gap: 15px; /* Adds spacing between the icons */
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  gap: 15px; 
+  flex-wrap: wrap;
 
   a {
     display: flex;
@@ -15,23 +15,23 @@ export const SocialLinkContainer = styled.div`
     justify-content: center;
 
     svg {
-      width: 40px; /* Larger size for better visibility */
+      width: 40px; 
       height: 40px;
       transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
 
       &:hover,
       &:focus {
-        transform: scale(1.1); /* Slight zoom effect */
-        fill: rgb(255, 130, 0); /* Optional hover fill color */
+        transform: scale(1.1); 
+        fill: rgb(255, 130, 0);
       }
     }
   }
 
   @media screen and (max-width: 600px) {
-    gap: 10px; /* Reduce spacing on smaller screens */
+    gap: 10px;
 
     a svg {
-      width: 30px; /* Smaller size for responsiveness */
+      width: 30px; 
       height: 30px;
     }
   }
@@ -39,7 +39,14 @@ export const SocialLinkContainer = styled.div`
 
 export const FooterSection = styled("footer")`
   background: rgb(0, 0, 0);
-  padding: 2.5rem 0;
+  padding: 1.5rem 1rem;
+ width: 100%;
+  margin: 0; 
+
+   @media screen and (max-width: 768px) {
+    padding: 2rem 0.5rem;
+    margin: 0; 
+  }
 `;
 
 export const Title = styled("h4")`

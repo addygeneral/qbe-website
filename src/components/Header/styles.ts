@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem 0;
   
   .ant-row-space-between {
     align-items: center;
@@ -55,6 +55,7 @@ export const Menu = styled("h5")`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  margin: 0;
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`

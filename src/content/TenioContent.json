@@ -1,7 +1,8 @@
 {
     "icon": "tenio.svg",
     "title": "iO ",
-    "text": "TEN-IO is a digital solutions company offering web design, software development, and custom technology services. They specialize in creating innovative and functional digital products to help businesses improve their online presence and operational efficiency.",
+    "text": "Ten-io offers a comprehensive suite of IT solutions, from ERP systems like VitaSphere for Life Insurance to cutting-edge AI-driven platforms. We help businesses of all sizes harness the latest technologies to enhance efficiency, security, and innovation. With successful projects like mobile payment platforms and custom ride-hailing apps, Ten-io is at the forefront of transforming digital landscapes for companies across industries.",
+    "tagline": "Tagline: Innovating Tomorrow's Solutions Today.",
     "button": [
       {
         "title": "Learn More",

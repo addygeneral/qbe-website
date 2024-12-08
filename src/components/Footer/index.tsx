@@ -52,7 +52,7 @@ const Footer = ({ t }: { t: TFunction }) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-            <br/>y
+            <br/>
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon

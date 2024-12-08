@@ -22,4 +22,6 @@ export interface ContentBlockProps {
   id: string;
   direction: "left" | "right" | "center";
   header?: string;
+  tagline?: string;
+
 }

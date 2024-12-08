@@ -8,7 +8,20 @@ export const ContactContainer = styled("div")`
   
 
   @media only screen and (max-width: 1024px) {
-    padding: 3rem 0;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media only screen and (max-width: 576px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0;
+  }
+     @media only screen and (max-width: 768px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
   }
 `;
 
@@ -37,6 +50,17 @@ export const Header = styled("h2")`
   margin-bottom: 2rem;
   color: #000;  
   font-family: 'Montserrat;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2.5rem;
+    text-align: left;
+
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 2rem;
+    text-align: left;
+  }
 `;
 
 export const ButtonContainer = styled("div")`
@@ -44,8 +68,9 @@ export const ButtonContainer = styled("div")`
   position: relative;
   
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 480px) {
     padding-top: 0.75rem;
+    text-align: center;
   }
 `;
 
@@ -67,12 +92,23 @@ export const ColumnWrapper = styled("div")`
     padding: 1.5rem;
     margin: 0.5rem;
   }
+
+  @media only screen and (max-width: 480px) {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
 `;
 export const SocialLinkContainer = styled("div")`
   display: flex;
   gap: 0.8rem;
   justify-content: flex-start;
   margin-top: 1rem;
+  
+    @media only screen and (max-width: 480px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
 `;
 
 

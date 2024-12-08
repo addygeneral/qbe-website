@@ -1,6 +1,12 @@
 {
     "title": "Investment & Partnership Opportunities",
-    "text": " At QBE Ghana Limited, we seek strategic partnerships and investments that align with our vision of delivering premium services across West Africa. By partnering with us, you gain access to innovative solutions, quality-driven results, and long-term growth opportunities. We are committed to fostering collaborations that drive mutual success and create lasting value."
+    "text": " At QBE Ghana Limited, we seek strategic partnerships and investments that align with our vision of delivering premium services across West Africa. By partnering with us, you gain access to innovative solutions, quality-driven results, and long-term growth opportunities. We are committed to fostering collaborations that drive mutual success and create lasting value.",
+    "button": [
+      {
+        "title": "Join Us In Shaping The Future",
+        "color": "#CCA351"
+      }
+    ] 
   }
   
  

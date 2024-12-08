@@ -10,6 +10,7 @@ import ContactContent from "../../content/ContactContent.json";
 import DigitalContent from "../../content/DigitalContent.json";
 import Keenvisioncontent from "../../content/Keenvisioncontent.json";
 import UnlockContent from "../../content/UnlockContent.json";
+import { FlexCard, FlexCardContainer, WhatWeContainer } from "./styles";
 
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -36,7 +37,20 @@ export const IntroContainer = styled.div`
     margin-bottom: 40px;
   
   }
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 0px; 
+      font-size: 1.5rem; 
+    }
+
+    @media only screen and (max-width: 480px) {
+      margin-left: 0px; 
+      font-size: 1.2rem; 
+      margin-bottom: 0px; 
+    }
+  }
   `
+  
   
 const Home = () => {
   return (
@@ -56,42 +70,74 @@ const Home = () => {
           direction="left"
           title={AboutContent.title}
           content={AboutContent.text}
+          header={AboutContent.header}
           section={AboutContent.section}
-          header="Core Values"
           icon="waving.svg"
           id="product" />
-        <ContentBlock
-          direction="left"
-          title={WhatweContent.title}
-          content={WhatweContent.text}
-          section={WhatweContent.section}
-          icon="graphs.svg"
-          id="about" />
+          
+      </Container>
+      
+        <WhatWeContainer>
+          <ContentBlock
+            direction="left"
+            title={WhatweContent.title}
+            content={WhatweContent.text}
+            icon="whatwe.svg"
+            id="about"
+          />
+        </WhatWeContainer>
+    <Container>
+
+        {/* New Flex Card Section for Our Vision and Our Mission */}
+        <FlexCardContainer>
+          <FlexCard>
+            <img src="/img/svg/notes.svg" alt="Our Vision Icon" />
+            <div className="text-content">
+              <h6>Our Vision</h6>
+              <p>Become the leading brand in Ghana and West Africa, setting the standard for excellence and innovation.</p>
+            </div>
+          </FlexCard>
+          <FlexCard>
+            <img src="/img/svg/notes2.svg" alt="Our Mission Icon" />
+            <div className="text-content">
+              <h6>Our Mission</h6>
+              <p>Deliver professional services exceeding clients' expectations and empower businesses with innovative solutions in IT, event management, and data research.</p>
+            </div>
+          </FlexCard>
+        </FlexCardContainer>
+        <div id="brands" style={{ textAlign: 'center', margin: '90px 0' }}>
+          <h2>Our Brands</h2>
+        </div>
         <ContentBlock
           direction="left"
           title={TenioContent.title}
           content={TenioContent.text}
+          tagline={TenioContent.tagline}
           button={TenioContent.button}
           icon="ourbrands.svg"
-          id="product" />
+          id="tenio" />
         <ContentBlock
           direction="right"
           title={MissionContent.title}
           content={MissionContent.text}
+          tagline={MissionContent.tagline}
           icon="qbeevents.svg"
           id="mission" />
         <ContentBlock
           direction="left"
           title={DigitalContent.title}
           content={DigitalContent.text}
+          tagline={DigitalContent.tagline}
           icon="dds.svg"
-          id="mission" />
+          id="digital" />
         <ContentBlock
           direction="right"
           title={Keenvisioncontent.title}
-          content={Keenvisioncontent.text}
+          content={Keenvisioncontent.text}      
+          tagline={Keenvisioncontent.tagline}
           icon="keenvision.svg"
-          id="mission" />
+          id="keen" />
+          </Container>
         <IntroContainer>
             <ContentBlock
               direction="center"
@@ -101,6 +147,7 @@ const Home = () => {
               id="image-block" />
         </IntroContainer>
        
+        <Container>
         {/*
     <div className="content-block image-container">
       <img src={RectangleImage} alt="Rectangle" />
@@ -116,8 +163,9 @@ const Home = () => {
           direction="left"
           title={UnlockContent.title}
           content={UnlockContent.text}
+          button={UnlockContent.button}
           icon="unlock.svg"
-          id="mission" />
+          id="unlock" />
       </Container>
       <IntroContainer>
       <Contact

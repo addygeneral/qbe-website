@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const Styles = createGlobalStyle`
+    body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
 
     @font-face {
         font-family: "Motiva Sans Light";
@@ -28,9 +34,7 @@ export const Styles = createGlobalStyle`
         border: 0;
         outline: 0;
         background: #fff;
-        overflow-x: hidden;
         height: 100%;
-        width: 100%;
     }
 
     a:hover {
@@ -68,20 +72,45 @@ export const Styles = createGlobalStyle`
         @media only screen and (max-width: 890px) {
           font-size: 47px;
         }
-      
+        @media only screen and (max-width: 768px) {
+        font-size: 40px;
+        }
         @media only screen and (max-width: 414px) {
           font-size: 32px;
         }
     }
 
     p {
-        color: #fffff;
+        color: #626262;
         font-size: 21px;        
         line-height: 1.41;
+
+        @media only screen and (max-width: 768px) {
+      font-size: 18px;
     }
+
+    @media only screen and (max-width: 414px) {
+      font-size: 16px;
+    }
+  }
+
 
     h1 {
         font-weight: 600;
+    }
+        
+    h5 {
+        font-weight: 600;
+        font-size: 2rem;
+
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+  
+      @media only screen and (max-width: 414px) {
+        font-size: 1.6rem;
+      }
     }
 
     a {
@@ -112,4 +141,19 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+        @media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;  // Smaller font size for better readability on mobile
+    }
+
+    .ant-drawer-content-wrapper {
+      width: 100% !important;  // Make drawer full-width on mobile
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    body {
+      font-size: 12px;  // Further reduce font size for very small screens
+    }
+  }
 `;
